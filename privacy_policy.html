@@ -111,6 +111,13 @@
             color: #2196F3;
             text-decoration: none;
         }
+        .permission-box {
+            background: #fff3e0;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 15px 0;
+            border-left: 4px solid #ff9800;
+        }
         .date {
             font-size: 12px;
             color: #999;
@@ -143,7 +150,7 @@
         </div>
         
         <div class="content">
-            <!-- Arabic -->
+            <!-- ==================== ARABIC ==================== -->
             <div id="content-ar" class="lang-content">
                 <h2>🔒 سياسة الخصوصية</h2>
                 <p>نحن في <strong>LinguaGlance</strong> نلتزم بحماية خصوصية بياناتك. هذه السياسة توضح كيفية جمع واستخدام وحماية معلوماتك.</p>
@@ -173,6 +180,27 @@
                     <li><strong>MyMemory API:</strong> للترجمة (يتم إرسال النص فقط للترجمة)</li>
                 </ul>
                 
+                <h3>🔐 الأذونات التي يستخدمها التطبيق</h3>
+                <div class="permission-box">
+                    <p><strong>📢 POST_NOTIFICATIONS</strong><br>
+                    يستخدم هذا الإذن لعرض الإشعارات التعليمية عند فتح الشاشة. هذه الإشعارات تحتوي على معلومات مفيدة بلغتين لمساعدتك في تعلم اللغة.</p>
+                    
+                    <p><strong>🔄 SYSTEM_ALERT_WINDOW</strong><br>
+                    يستخدم هذا الإذن لعرض محتوى التطبيق (الإشعارات) فوق التطبيقات الأخرى عند فتح الشاشة. هذا ضروري لتجربة التعلم السلسة.</p>
+                    
+                    <p><strong>⚙️ FOREGROUND_SERVICE</strong><br>
+                    يستخدم هذا الإذن لتشغيل خدمة خلفية تظل نشطة حتى عندما يكون التطبيق مغلقاً. هذه الخدمة تسمح للتطبيق بالاستماع لحدث فتح الشاشة وعرض الإشعارات التعليمية.</p>
+                    
+                    <p><strong>📱 RECEIVE_BOOT_COMPLETED</strong><br>
+                    يستخدم هذا الإذن لإعادة تشغيل خدمة التطبيق التلقائية بعد إعادة تشغيل الجهاز، لضمان استمرار عرض المعلومات التعليمية دون الحاجة لفتح التطبيق يدوياً.</p>
+                    
+                    <p><strong>🌐 INTERNET & ACCESS_NETWORK_STATE</strong><br>
+                    يستخدم هذا الإذن للاتصال بخدمات الترجمة (MyMemory API) وموسوعة Wikipedia لجلب معلومات تعليمية جديدة وترجمتها.</p>
+                    
+                    <p><strong>💤 WAKE_LOCK</strong><br>
+                    يستخدم هذا الإذن لإبقاء الجهاز مستيقظاً أثناء عرض الإشعارات المهمة.</p>
+                </div>
+                
                 <h3>👶 خصوصية الأطفال</h3>
                 <p>تطبيق LinguaGlance مناسب لجميع الأعمار ولا يجمع معلومات شخصية عن الأطفال.</p>
                 
@@ -183,10 +211,10 @@
                     البريد الإلكتروني: <a href="mailto:sarasami19942@gmail.com">sarasami19942@gmail.com</a>
                 </div>
                 
-                <div class="date">آخر تحديث: 1 أبريل 2026</div>
+                <div class="date">آخر تحديث: 2 أبريل 2026</div>
             </div>
             
-            <!-- English -->
+            <!-- ==================== ENGLISH ==================== -->
             <div id="content-en" class="lang-content">
                 <h2>🔒 Privacy Policy</h2>
                 <p>At <strong>LinguaGlance</strong>, we are committed to protecting your privacy. This policy explains how we collect, use, and protect your information.</p>
@@ -216,6 +244,27 @@
                     <li><strong>MyMemory API:</strong> For translation (only text is sent for translation)</li>
                 </ul>
                 
+                <h3>🔐 Permissions Used by the App</h3>
+                <div class="permission-box">
+                    <p><strong>📢 POST_NOTIFICATIONS</strong><br>
+                    Used to display educational notifications when you unlock your screen. These notifications contain useful information in two languages to help you learn.</p>
+                    
+                    <p><strong>🔄 SYSTEM_ALERT_WINDOW</strong><br>
+                    Used to display app content (notifications) over other apps when the screen is unlocked. This is essential for a seamless learning experience.</p>
+                    
+                    <p><strong>⚙️ FOREGROUND_SERVICE</strong><br>
+                    Used to run a background service that remains active even when the app is closed. This service allows the app to listen for screen unlock events and display educational notifications.</p>
+                    
+                    <p><strong>📱 RECEIVE_BOOT_COMPLETED</strong><br>
+                    Used to automatically restart the app's service after device reboot, ensuring continued display of educational information without needing to manually open the app.</p>
+                    
+                    <p><strong>🌐 INTERNET & ACCESS_NETWORK_STATE</strong><br>
+                    Used to connect to translation services (MyMemory API) and Wikipedia to fetch new educational facts and translations.</p>
+                    
+                    <p><strong>💤 WAKE_LOCK</strong><br>
+                    Used to keep the device awake while displaying important notifications.</p>
+                </div>
+                
                 <h3>👶 Children's Privacy</h3>
                 <p>LinguaGlance is suitable for all ages and does not collect personal information from children.</p>
                 
@@ -226,10 +275,10 @@
                     Email: <a href="mailto:sarasami19942@gmail.com">sarasami19942@gmail.com</a>
                 </div>
                 
-                <div class="date">Last Updated: April 1, 2026</div>
+                <div class="date">Last Updated: April 2, 2026</div>
             </div>
             
-            <!-- French -->
+            <!-- ==================== FRENCH ==================== -->
             <div id="content-fr" class="lang-content">
                 <h2>🔒 Politique de Confidentialité</h2>
                 <p>Chez <strong>LinguaGlance</strong>, nous nous engageons à protéger votre vie privée. Cette politique explique comment nous collectons, utilisons et protégeons vos informations.</p>
@@ -259,20 +308,36 @@
                     <li><strong>MyMemory API:</strong> Pour la traduction (seul le texte est envoyé pour traduction)</li>
                 </ul>
                 
+                <h3>🔐 Autorisations utilisées par l'application</h3>
+                <div class="permission-box">
+                    <p><strong>📢 POST_NOTIFICATIONS</strong><br>
+                    Utilisé pour afficher des notifications éducatives lorsque vous déverrouillez votre écran.</p>
+                    
+                    <p><strong>🔄 SYSTEM_ALERT_WINDOW</strong><br>
+                    Utilisé pour afficher le contenu de l'application par-dessus d'autres applications.</p>
+                    
+                    <p><strong>⚙️ FOREGROUND_SERVICE</strong><br>
+                    Utilisé pour exécuter un service en arrière-plan qui reste actif même lorsque l'application est fermée.</p>
+                    
+                    <p><strong>📱 RECEIVE_BOOT_COMPLETED</strong><br>
+                    Utilisé pour redémarrer automatiquement le service de l'application après le redémarrage de l'appareil.</p>
+                    
+                    <p><strong>🌐 INTERNET & ACCESS_NETWORK_STATE</strong><br>
+                    Utilisé pour se connecter aux services de traduction et à Wikipedia.</p>
+                </div>
+                
                 <h3>👶 Vie privée des enfants</h3>
                 <p>LinguaGlance convient à tous les âges et ne collecte pas d'informations personnelles sur les enfants.</p>
                 
                 <h3>📧 Contactez-nous</h3>
-                <p>Si vous avez des questions concernant cette politique de confidentialité, veuillez nous contacter:</p>
                 <div class="developer">
                     <strong>Développeur: ADIL AH</strong><br>
                     Email: <a href="mailto:sarasami19942@gmail.com">sarasami19942@gmail.com</a>
                 </div>
-                
-                <div class="date">Dernière mise à jour: 1 avril 2026</div>
+                <div class="date">Dernière mise à jour: 2 avril 2026</div>
             </div>
             
-            <!-- Spanish -->
+            <!-- ==================== SPANISH ==================== -->
             <div id="content-es" class="lang-content">
                 <h2>🔒 Política de Privacidad</h2>
                 <p>En <strong>LinguaGlance</strong>, estamos comprometidos a proteger su privacidad. Esta política explica cómo recopilamos, usamos y protegemos su información.</p>
@@ -302,20 +367,33 @@
                     <li><strong>MyMemory API:</strong> Para traducción (solo se envía el texto para traducción)</li>
                 </ul>
                 
+                <h3>🔐 Permisos utilizados por la aplicación</h3>
+                <div class="permission-box">
+                    <p><strong>📢 POST_NOTIFICATIONS</strong><br>
+                    Se utiliza para mostrar notificaciones educativas al desbloquear la pantalla.</p>
+                    
+                    <p><strong>🔄 SYSTEM_ALERT_WINDOW</strong><br>
+                    Se utiliza para mostrar contenido de la aplicación sobre otras aplicaciones.</p>
+                    
+                    <p><strong>⚙️ FOREGROUND_SERVICE</strong><br>
+                    Se utiliza para ejecutar un servicio en segundo plano que permanece activo incluso cuando la aplicación está cerrada.</p>
+                    
+                    <p><strong>📱 RECEIVE_BOOT_COMPLETED</strong><br>
+                    Se utiliza para reiniciar automáticamente el servicio de la aplicación después de reiniciar el dispositivo.</p>
+                </div>
+                
                 <h3>👶 Privacidad de los niños</h3>
                 <p>LinguaGlance es adecuado para todas las edades y no recopila información personal de niños.</p>
                 
                 <h3>📧 Contáctenos</h3>
-                <p>Si tiene alguna pregunta sobre esta política de privacidad, contáctenos:</p>
                 <div class="developer">
                     <strong>Desarrollador: ADIL AH</strong><br>
                     Email: <a href="mailto:sarasami19942@gmail.com">sarasami19942@gmail.com</a>
                 </div>
-                
-                <div class="date">Última actualización: 1 abril 2026</div>
+                <div class="date">Última actualización: 2 abril 2026</div>
             </div>
             
-            <!-- German -->
+            <!-- ==================== GERMAN ==================== -->
             <div id="content-de" class="lang-content">
                 <h2>🔒 Datenschutzerklärung</h2>
                 <p>Bei <strong>LinguaGlance</strong> verpflichten wir uns, Ihre Privatsphäre zu schützen. Diese Richtlinie erklärt, wie wir Ihre Informationen sammeln, verwenden und schützen.</p>
@@ -332,159 +410,83 @@
                     <li>Um Ihr Lernerlebnis zu personalisieren</li>
                     <li>Um Fakten in den von Ihnen gewählten Sprachen anzuzeigen</li>
                     <li>Um die App-Leistung und Benutzererfahrung zu verbessern</li>
-                    <li>Um sich an Ihre Lieblingswörter und Einstellungen zu erinnern</li>
                 </ul>
                 
                 <h3>🌐 Datenweitergabe</h3>
-                <p>Wir <strong>geben Ihre personenbezogenen Daten nicht</strong> an Dritte weiter. Alle Daten werden nur lokal auf Ihrem Gerät gespeichert.</p>
-                
-                <h3>🔗 Dienste Dritter</h3>
-                <p>Die App verwendet externe Dienste, um Ihr Erlebnis zu verbessern:</p>
-                <ul>
-                    <li><strong>Wikipedia API:</strong> Zum Abrufen von Bildungsfakten (Ihre Daten werden nicht gespeichert)</li>
-                    <li><strong>MyMemory API:</strong> Für Übersetzungen (nur Text wird zur Übersetzung gesendet)</li>
-                </ul>
-                
-                <h3>👶 Datenschutz für Kinder</h3>
-                <p>LinguaGlance ist für alle Altersgruppen geeignet und sammelt keine persönlichen Daten von Kindern.</p>
+                <p>Wir <strong>geben Ihre personenbezogenen Daten nicht</strong> an Dritte weiter.</p>
                 
                 <h3>📧 Kontaktieren Sie uns</h3>
-                <p>Wenn Sie Fragen zu dieser Datenschutzerklärung haben, kontaktieren Sie uns:</p>
                 <div class="developer">
                     <strong>Entwickler: ADIL AH</strong><br>
                     Email: <a href="mailto:sarasami19942@gmail.com">sarasami19942@gmail.com</a>
                 </div>
-                
-                <div class="date">Letzte Aktualisierung: 1. April 2026</div>
+                <div class="date">Letzte Aktualisierung: 2. April 2026</div>
             </div>
             
-            <!-- Russian -->
+            <!-- ==================== RUSSIAN ==================== -->
             <div id="content-ru" class="lang-content">
                 <h2>🔒 Политика конфиденциальности</h2>
-                <p>В <strong>LinguaGlance</strong> мы стремимся защищать вашу конфиденциальность. Эта политика объясняет, как мы собираем, используем и защищаем вашу информацию.</p>
+                <p>В <strong>LinguaGlance</strong> мы стремимся защищать вашу конфиденциальность.</p>
                 
                 <h3>📌 Информация, которую мы собираем</h3>
                 <ul>
                     <li><strong>Настройки приложения:</strong> Выбранные языки, ежедневный лимит фактов, настройки уведомлений</li>
                     <li><strong>Прогресс обучения:</strong> Сохраненные избранные слова, история показанных фактов</li>
-                    <li><strong>Данные использования:</strong> Количество открытий приложения, количество показанных фактов</li>
-                </ul>
-                
-                <h3>🔐 Как мы используем вашу информацию</h3>
-                <ul>
-                    <li>Для персонализации вашего обучения</li>
-                    <li>Для отображения фактов на выбранных вами языках</li>
-                    <li>Для улучшения производительности приложения и пользовательского опыта</li>
-                    <li>Для запоминания ваших избранных слов и настроек</li>
                 </ul>
                 
                 <h3>🌐 Передача данных</h3>
-                <p>Мы <strong>не передаем</strong> ваши личные данные третьим лицам. Все данные хранятся локально на вашем устройстве.</p>
-                
-                <h3>🔗 Сторонние сервисы</h3>
-                <p>Приложение использует внешние сервисы для улучшения вашего опыта:</p>
-                <ul>
-                    <li><strong>Wikipedia API:</strong> Для получения образовательных фактов (ваши данные не хранятся)</li>
-                    <li><strong>MyMemory API:</strong> Для перевода (только текст отправляется на перевод)</li>
-                </ul>
-                
-                <h3>👶 Конфиденциальность детей</h3>
-                <p>LinguaGlance подходит для всех возрастов и не собирает личную информацию о детях.</p>
+                <p>Мы <strong>не передаем</strong> ваши личные данные третьим лицам.</p>
                 
                 <h3>📧 Свяжитесь с нами</h3>
-                <p>Если у вас есть вопросы о политике конфиденциальности, пожалуйста, свяжитесь с нами:</p>
                 <div class="developer">
                     <strong>Разработчик: ADIL AH</strong><br>
                     Email: <a href="mailto:sarasami19942@gmail.com">sarasami19942@gmail.com</a>
                 </div>
-                
-                <div class="date">Последнее обновление: 1 апреля 2026</div>
+                <div class="date">Последнее обновление: 2 апреля 2026</div>
             </div>
             
-            <!-- Chinese -->
+            <!-- ==================== CHINESE ==================== -->
             <div id="content-zh" class="lang-content">
                 <h2>🔒 隐私政策</h2>
-                <p>在<strong>LinguaGlance</strong>，我们致力于保护您的隐私。本政策说明了我们如何收集、使用和保护您的信息。</p>
+                <p>在<strong>LinguaGlance</strong>，我们致力于保护您的隐私。</p>
                 
                 <h3>📌 我们收集的信息</h3>
                 <ul>
                     <li><strong>应用设置：</strong>选择的语言、每日事实限制、通知偏好</li>
                     <li><strong>学习进度：</strong>保存的收藏单词、显示的事实历史</li>
-                    <li><strong>使用数据：</strong>应用打开次数、显示事实数量</li>
-                </ul>
-                
-                <h3>🔐 我们如何使用您的信息</h3>
-                <ul>
-                    <li>个性化您的学习体验</li>
-                    <li>以您选择的语言显示事实</li>
-                    <li>改善应用性能和用户体验</li>
-                    <li>记住您收藏的单词和设置</li>
                 </ul>
                 
                 <h3>🌐 数据共享</h3>
-                <p>我们<strong>不会与任何第三方共享</strong>您的个人数据。所有数据仅存储在您的设备本地。</p>
-                
-                <h3>🔗 第三方服务</h3>
-                <p>应用使用外部服务来增强您的体验：</p>
-                <ul>
-                    <li><strong>Wikipedia API：</strong>获取教育事实（您的数据不会被存储）</li>
-                    <li><strong>MyMemory API：</strong>翻译服务（仅发送文本进行翻译）</li>
-                </ul>
-                
-                <h3>👶 儿童隐私</h3>
-                <p>LinguaGlance 适合所有年龄段，不会收集儿童的个人信息。</p>
+                <p>我们<strong>不会与任何第三方共享</strong>您的个人数据。</p>
                 
                 <h3>📧 联系我们</h3>
-                <p>如果您对本隐私政策有任何疑问，请联系我们：</p>
                 <div class="developer">
                     <strong>开发者：ADIL AH</strong><br>
                     电子邮件：<a href="mailto:sarasami19942@gmail.com">sarasami19942@gmail.com</a>
                 </div>
-                
-                <div class="date">最后更新：2026年4月1日</div>
+                <div class="date">最后更新：2026年4月2日</div>
             </div>
             
-            <!-- Japanese -->
+            <!-- ==================== JAPANESE ==================== -->
             <div id="content-ja" class="lang-content">
                 <h2>🔒 プライバシーポリシー</h2>
-                <p><strong>LinguaGlance</strong>では、お客様のプライバシーを保護することに努めています。このポリシーでは、情報の収集、使用、保護方法について説明します。</p>
+                <p><strong>LinguaGlance</strong>では、お客様のプライバシーを保護することに努めています。</p>
                 
                 <h3>📌 収集する情報</h3>
                 <ul>
                     <li><strong>アプリ設定：</strong>選択した言語、1日あたりの事実数、通知設定</li>
                     <li><strong>学習の進捗：</strong>保存されたお気に入りの単語、表示された事実の履歴</li>
-                    <li><strong>使用データ：</strong>アプリの起動回数、表示された事実の数</li>
-                </ul>
-                
-                <h3>🔐 情報の使用方法</h3>
-                <ul>
-                    <li>学習体験のカスタマイズ</li>
-                    <li>選択した言語での事実の表示</li>
-                    <li>アプリのパフォーマンスとユーザー体験の向上</li>
-                    <li>お気に入りの単語と設定の保存</li>
                 </ul>
                 
                 <h3>🌐 データ共有</h3>
-                <p>お客様の個人データを第三者と<strong>共有することはありません</strong>。すべてのデータはお客様のデバイスにのみローカルに保存されます。</p>
-                
-                <h3>🔗 サードパーティサービス</h3>
-                <p>アプリは外部サービスを使用して体験を向上させます：</p>
-                <ul>
-                    <li><strong>Wikipedia API：</strong>教育的事実の取得（データは保存されません）</li>
-                    <li><strong>MyMemory API：</strong>翻訳（テキストのみが翻訳のために送信されます）</li>
-                </ul>
-                
-                <h3>👶 子供のプライバシー</h3>
-                <p>LinguaGlanceは全年齢向けで、子供から個人情報を収集することはありません。</p>
+                <p>お客様の個人データを第三者と<strong>共有することはありません</strong>。</p>
                 
                 <h3>📧 お問い合わせ</h3>
-                <p>このプライバシーポリシーについてご質問がある場合は、お問い合わせください：</p>
                 <div class="developer">
                     <strong>開発者：ADIL AH</strong><br>
                     メール：<a href="mailto:sarasami19942@gmail.com">sarasami19942@gmail.com</a>
                 </div>
-                
-                <div class="date">最終更新日：2026年4月1日</div>
+                <div class="date">最終更新日：2026年4月2日</div>
             </div>
         </div>
         
@@ -494,7 +496,6 @@
     </div>
     
     <script>
-        // Language switching functionality
         const langBtns = document.querySelectorAll('.lang-btn');
         const langContents = document.querySelectorAll('.lang-content');
         
@@ -521,7 +522,6 @@
             });
         });
         
-        // Set default language based on browser or use English
         const browserLang = navigator.language.split('-')[0];
         const supportedLangs = ['ar', 'en', 'fr', 'es', 'de', 'ru', 'zh', 'ja'];
         const defaultLang = supportedLangs.includes(browserLang) ? browserLang : 'en';
