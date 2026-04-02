@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Guide - ScreenWise</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #2196F3, #1976D2);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        .header h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        .language-selector {
+            background: #f5f5f5;
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+        .lang-btn {
+            display: inline-block;
+            padding: 8px 16px;
+            margin: 5px;
+            background: #e0e0e0;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+        .lang-btn:hover, .lang-btn.active { background: #2196F3; color: white; }
+        .content { padding: 40px; }
+        .lang-content { display: none; }
+        .lang-content.active { display: block; }
+        h2 { color: #2196F3; margin: 25px 0 15px; border-bottom: 2px solid #2196F3; padding-bottom: 10px; }
+        h3 { color: #555; margin: 20px 0 10px; }
+        p { margin-bottom: 15px; color: #333; }
+        ul, ol { margin: 15px 0 15px 30px; }
+        li { margin-bottom: 8px; color: #555; }
+        .step { background: #e3f2fd; padding: 15px; border-radius: 10px; margin: 15px 0; border-left: 4px solid #2196F3; }
+        .tip { background: #fff3e0; padding: 15px; border-radius: 10px; margin: 15px 0; border-left: 4px solid #ff9800; }
+        .warning { background: #ffebee; padding: 15px; border-radius: 10px; margin: 15px 0; border-left: 4px solid #f44336; }
+        .footer { background: #f5f5f5; padding: 30px; text-align: center; border-top: 1px solid #ddd; color: #666; }
+        .developer { background: #e3f2fd; padding: 15px; border-radius: 10px; margin-top: 20px; text-align: center; }
+        .developer a { color: #2196F3; text-decoration: none; }
+        .date { font-size: 12px; color: #999; margin-top: 20px; }
+        @media (max-width: 768px) { .content { padding: 20px; } .header h1 { font-size: 1.8rem; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📚 ScreenWise</h1>
+            <p>User Guide | دليل المستخدم | Guide d'utilisation | Guía de Usuario | Benutzerhandbuch | Руководство пользователя | 用户指南 | ユーザーガイド</p>
+        </div>
+        
+        <div class="language-selector">
+            <button class="lang-btn" data-lang="ar">العربية</button>
+            <button class="lang-btn" data-lang="en">English</button>
+            <button class="lang-btn" data-lang="fr">Français</button>
+            <button class="lang-btn" data-lang="es">Español</button>
+            <button class="lang-btn" data-lang="de">Deutsch</button>
+            <button class="lang-btn" data-lang="ru">Русский</button>
+            <button class="lang-btn" data-lang="zh">中文</button>
+            <button class="lang-btn" data-lang="ja">日本語</button>
+        </div>
+        
+        <div class="content">
+            <!-- Arabic -->
+            <div id="content-ar" class="lang-content">
+                <h2>📱 دليل استخدام تطبيق ScreenWise</h2>
+                <p>مرحباً بك في ScreenWise! هذا الدليل سيساعدك على استخدام التطبيق بشكل صحيح والاستفادة القصوى من جميع الميزات.</p>
+                
+                <div class="step">
+                    <h3>🚀 الخطوة 1: الإعدادات الأولية</h3>
+                    <ol>
+                        <li>افتح التطبيق لأول مرة</li>
+                        <li>اختر <strong>لغتك الأم</strong> (اللغة التي تتحدثها)</li>
+                        <li>اختر <strong>اللغة التي تريد تعلمها</strong></li>
+                        <li>اختر <strong>عدد المعلومات في اليوم</strong> (مرة واحدة / 3,5,10,15,20,25,30 مرة / كل مرة)</li>
+                        <li>اضغط على <strong>💾 حفظ الإعدادات</strong></li>
+                    </ol>
+                </div>
+                
+                <div class="step">
+                    <h3>📖 الخطوة 2: منح الأذونات</h3>
+                    <p>عند الطلب، اضغط <strong>السماح</strong> لإذن الإشعارات. هذا ضروري لعرض المعلومات عند فتح الشاشة.</p>
+                </div>
+                
+                <div class="step">
+                    <h3>🔔 الخطوة 3: التعلم اليومي</h3>
+                    <ol>
+                        <li><strong>أغلق التطبيق</strong> (اضغط زر الصفحة الرئيسية)</li>
+                        <li><strong>اقفل هاتفك</strong> ثم <strong>افتحه</strong></li>
+                        <li>ستظهر <strong>إشعار</strong> يحتوي على معلومة جديدة بلغتين</li>
+                        <li><strong>اضغط على الإشعار</strong> لرؤية التفاصيل الكاملة</li>
+                    </ol>
+                </div>
+                
+                <div class="step">
+                    <h3>⭐ الخطوة 4: حفظ الكلمات المفضلة</h3>
+                    <ol>
+                        <li>في صفحة التفاصيل، ابحث عن <strong>🔑 كلمات مفتاحية</strong></li>
+                        <li>اضغط على <strong>+</strong> بجانب أي كلمة لحفظها</li>
+                        <li>ستظهر الكلمة مع علامة <strong>⭐</strong></li>
+                        <li>يمكنك عرض كلماتك المفضلة من زر <strong>⭐ كلماتي المفضلة</strong> في الشاشة الرئيسية</li>
+                    </ol>
+                </div>
+                
+                <div class="step">
+                    <h3>📚 الخطوة 5: تعلم القواعد النحوية</h3>
+                    <ol>
+                        <li>في الشاشة الرئيسية، اضغط على <strong>📚 قواعد اللغة</strong></li>
+                        <li>ستظهر قائمة بالقواعد حسب اللغة التي تتعلمها</li>
+                        <li>اضغط على أي قاعدة لرؤية الشرح والأمثلة</li>
+                    </ol>
+                </div>
+                
+                <div class="tip">
+                    <h3>💡 نصائح مهمة</h3>
+                    <ul>
+                        <li><strong>لا تستخدم "المسح السريع"</strong> لإغلاق التطبيق (قد يوقف الخدمة)</li>
+                        <li><strong>اترك التطبيق يعمل في الخلفية</strong> للحصول على إشعارات مستمرة</li>
+                        <li><strong>وفر اتصال بالإنترنت</strong> للحصول على معلومات جديدة من Wikipedia</li>
+                        <li><strong>فعّل "عدم تقييد البطارية"</strong> للهواتف الصينية (شاومي، هواوي، أوبو)</li>
+                    </ul>
+                </div>
+                
+                <div class="warning">
+                    <h3>⚠️ للهواتف الصينية</h3>
+                    <p>إذا كنت تستخدم هاتف Xiaomi، Huawei، Oppo، Realme:</p>
+                    <ol>
+                        <li>اذهب إلى <strong>إعدادات الهاتف</strong></li>
+                        <li>ابحث عن <strong>البطارية</strong> أو <strong>إدارة الطاقة</strong></li>
+                        <li>ابحث عن <strong>ScreenWise</strong> في قائمة التطبيقات</li>
+                        <li>فعّل <strong>عدم تقييد البطارية</strong> أو <strong>تشغيل في الخلفية</strong></li>
+                    </ol>
+                </div>
+                
+                <h3>🌐 اللغات المدعومة</h3>
+                <ul>
+                    <li>🇸🇦 العربية (Arabic)</li>
+                    <li>🇬🇧 English</li>
+                    <li>🇫🇷 Français</li>
+                    <li>🇪🇸 Español</li>
+                    <li>🇩🇪 Deutsch</li>
+                    <li>🇷🇺 Русский</li>
+                    <li>🇨🇳 中文</li>
+                    <li>🇯🇵 日本語</li>
+                </ul>
+                
+                <h3>❓ حل المشكلات الشائعة</h3>
+                <ul>
+                    <li><strong>لا تظهر إشعارات؟</strong> → تأكد من منح إذن الإشعارات في إعدادات الهاتف</li>
+                    <li><strong>لا تظهر ترجمة؟</strong> → تأكد من اتصال الإنترنت</li>
+                    <li><strong>الكلمات المفضلة لا تحفظ؟</strong> → لا تحذف التطبيق، جميع البيانات مخزنة محلياً</li>
+                </ul>
+                
+                <h3>📧 اتصل بنا</h3>
+                <div class="developer">
+                    <strong>المطور: ADIL AH</strong><br>
+                    البريد الإلكتروني: <a href="mailto:sarasami19942@gmail.com">sarasami19942@gmail.com</a>
+                </div>
+                <div class="date">آخر تحديث: 1 أبريل 2026</div>
+            </div>
+            
+            <!-- English -->
+            <div id="content-en" class="lang-content">
+                <h2>📱 ScreenWise User Guide</h2>
+                <p>Welcome to ScreenWise! This guide will help you use the app correctly and get the most out of all features.</p>
+                
+                <div class="step">
+                    <h3>🚀 Step 1: Initial Setup</h3>
+                    <ol>
+                        <li>Open the app for the first time</li>
+                        <li>Select your <strong>Native Language</strong> (the language you speak)</li>
+                        <li>Select the <strong>Language you want to learn</strong></li>
+                        <li>Select <strong>Daily facts limit</strong> (1 / 3,5,10,15,20,25,30 times / every time)</li>
+                        <li>Tap <strong>💾 Save Settings</strong></li>
+                    </ol>
+                </div>
+                
+                <div class="step">
+                    <h3>📖 Step 2: Grant Permissions</h3>
+                    <p>When prompted, tap <strong>Allow</strong> for notification permission. This is essential for displaying facts when you unlock your screen.</p>
+                </div>
+                
+                <div class="step">
+                    <h3>🔔 Step 3: Daily Learning</h3>
+                    <ol>
+                        <li><strong>Close the app</strong> (press the home button)</li>
+                        <li><strong>Lock your phone</strong> then <strong>unlock it</strong></li>
+                        <li>A <strong>notification</strong> will appear with a new fact in both languages</li>
+                        <li><strong>Tap the notification</strong> to see full details</li>
+                    </ol>
+                </div>
+                
+                <div class="step">
+                    <h3>⭐ Step 4: Save Favorite Words</h3>
+                    <ol>
+                        <li>In the details page, look for <strong>🔑 Key Words</strong></li>
+                        <li>Tap <strong>+</strong> next to any word to save it</li>
+                        <li>The word will appear with a <strong>⭐</strong> icon</li>
+                        <li>View your favorite words from the <strong>⭐ My Favorite Words</strong> button on the main screen</li>
+                    </ol>
+                </div>
+                
+                <div class="step">
+                    <h3>📚 Step 5: Learn Grammar</h3>
+                    <ol>
+                        <li>On the main screen, tap <strong>📚 Grammar</strong></li>
+                        <li>A list of grammar rules will appear based on your target language</li>
+                        <li>Tap any rule to see explanation and examples</li>
+                    </ol>
+                </div>
+                
+                <div class="tip">
+                    <h3>💡 Important Tips</h3>
+                    <ul>
+                        <li><strong>Don't use "swipe to close"</strong> to close the app (it may stop the service)</li>
+                        <li><strong>Keep the app running in the background</strong> for continuous notifications</li>
+                        <li><strong>Ensure internet connection</strong> to get new facts from Wikipedia</li>
+                        <li><strong>Enable "Unrestricted battery"</strong> for Chinese phones (Xiaomi, Huawei, Oppo)</li>
+                    </ul>
+                </div>
+                
+                <div class="warning">
+                    <h3>⚠️ For Chinese Phones</h3>
+                    <p>If you use Xiaomi, Huawei, Oppo, or Realme:</p>
+                    <ol>
+                        <li>Go to <strong>Phone Settings</strong></li>
+                        <li>Find <strong>Battery</strong> or <strong>Power Management</strong></li>
+                        <li>Find <strong>ScreenWise</strong> in the app list</li>
+                        <li>Enable <strong>Unrestricted battery</strong> or <strong>Run in background</strong></li>
+                    </ol>
+                </div>
+                
+                <h3>🌐 Supported Languages</h3>
+                <ul>
+                    <li>🇸🇦 Arabic (العربية)</li>
+                    <li>🇬🇧 English</li>
+                    <li>🇫🇷 Français</li>
+                    <li>🇪🇸 Español</li>
+                    <li>🇩🇪 Deutsch</li>
+                    <li>🇷🇺 Русский</li>
+                    <li>🇨🇳 中文</li>
+                    <li>🇯🇵 日本語</li>
+                </ul>
+                
+                <h3>❓ Troubleshooting</h3>
+                <ul>
+                    <li><strong>No notifications?</strong> → Check notification permissions in phone settings</li>
+                    <li><strong>No translation?</strong> → Check your internet connection</li>
+                    <li><strong>Favorite words not saving?</strong> → Don't delete the app; all data is stored locally</li>
+                </ul>
+                
+                <h3>📧 Contact Us</h3>
+                <div class="developer">
+                    <strong>Developer: ADIL AH</strong><br>
+                    Email: <a href="mailto:sarasami19942@gmail.com">sarasami19942@gmail.com</a>
+                </div>
+                <div class="date">Last Updated: April 1, 2026</div>
+            </div>
+            
+            <!-- French -->
+            <div id="content-fr" class="lang-content">
+                <h2>📱 Guide d'utilisation de ScreenWise</h2>
+                <p>Bienvenue sur ScreenWise ! Ce guide vous aidera à utiliser l'application correctement et à tirer le meilleur parti de toutes les fonctionnalités.</p>
+                
+                <div class="step">
+                    <h3>🚀 Étape 1 : Configuration initiale</h3>
+                    <ol>
+                        <li>Ouvrez l'application pour la première fois</li>
+                        <li>Sélectionnez votre <strong>Langue maternelle</strong></li>
+                        <li>Sélectionnez la <strong>Langue que vous voulez apprendre</strong></li>
+                        <li>Sélectionnez la <strong>Limite quotidienne de faits</strong></li>
+                        <li>Appuyez sur <strong>💾 Enregistrer les paramètres</strong></li>
+                    </ol>
+                </div>
+                
+                <div class="step">
+                    <h3>📖 Étape 2 : Autorisations</h3>
+                    <p>Lorsque vous y êtes invité, appuyez sur <strong>Autoriser</strong> pour les notifications. Ceci est essentiel pour afficher les faits lors du déverrouillage.</p>
+                </div>
+                
+                <div class="step">
+                    <h3>🔔 Étape 3 : Apprentissage quotidien</h3>
+                    <ol>
+                        <li><strong>Fermez l'application</strong> (appuyez sur le bouton d'accueil)</li>
+                        <li><strong>Verrouillez votre téléphone</strong> puis <strong>déverrouillez-le</strong></li>
+                        <li>Une <strong>notification</strong> apparaîtra avec un nouveau fait dans les deux langues</li>
+                        <li><strong>Appuyez sur la notification</strong> pour voir les détails complets</li>
+                    </ol>
+                </div>
+                
+                <div class="tip">
+                    <h3>💡 Conseils importants</h3>
+                    <ul>
+                        <li><strong>N'utilisez pas "glisser pour fermer"</strong> pour fermer l'application</li>
+                        <li><strong>Laissez l'application s'exécuter en arrière-plan</strong></li>
+                        <li><strong>Assurez-vous d'avoir une connexion internet</strong></li>
+                    </ul>
+                </div>
+                
+                <h3>📧 Contactez-nous</h3>
+                <div class="developer">
+                    <strong>Développeur: ADIL AH</strong><br>
+                    Email: <a href="mailto:sarasami19942@gmail.com">sarasami19942@gmail.com</a>
+                </div>
+                <div class="date">Dernière mise à jour: 1 avril 2026</div>
+            </div>
+            
+            <!-- Spanish -->
+            <div id="content-es" class="lang-content">
+                <h2>📱 Guía de Usuario de ScreenWise</h2>
+                <p>¡Bienvenido a ScreenWise! Esta guía te ayudará a usar la aplicación correctamente.</p>
+                <div class="step"><h3>🚀 Paso 1: Configuración inicial</h3><ol><li>Abre la aplicación por primera vez</li><li>Selecciona tu <strong>Idioma nativo</strong></li><li>Selecciona el <strong>Idioma que quieres aprender</strong></li><li>Selecciona el <strong>Límite diario de datos</strong></li><li>Toca <strong>💾 Guardar configuración</strong></li></ol></div>
+                <div class="step"><h3>🔔 Paso 2: Aprendizaje diario</h3><ol><li><strong>Cierra la aplicación</strong></li><li><strong>Bloquea tu teléfono</strong> luego <strong>desbloquéalo</strong></li><li>Aparecerá una <strong>notificación</strong></li><li><strong>Toca la notificación</strong> para ver los detalles</li></ol></div>
+                <div class="tip"><h3>💡 Consejos</h3><ul><li>No cierres la aplicación deslizando</li><li>Mantén la aplicación en segundo plano</li><li>Asegúrate de tener conexión a internet</li></ul></div>
+                <h3>📧 Contacto</h3><div class="developer"><strong>Desarrollador: ADIL AH</strong><br>Email: <a href="mailto:sarasami19942@gmail.com">sarasami19942@gmail.com</a></div>
+                <div class="date">Última actualización: 1 abril 2026</div>
+            </div>
+            
+            <!-- German -->
+            <div id="content-de" class="lang-content">
+                <h2>📱 ScreenWise Benutzerhandbuch</h2>
+                <p>Willkommen bei ScreenWise! Dieses Handbuch hilft Ihnen, die App richtig zu nutzen.</p>
+                <div class="step"><h3>🚀 Schritt 1: Ersteinrichtung</h3><ol><li>Öffnen Sie die App zum ersten Mal</li><li>Wählen Sie Ihre <strong>Muttersprache</strong></li><li>Wählen Sie die <strong>zu lernende Sprache</strong></li><li>Wählen Sie das <strong>Tägliche Faktenlimit</strong></li><li>Tippen Sie auf <strong>💾 Einstellungen speichern</strong></li></ol></div>
+                <div class="step"><h3>🔔 Schritt 2: Tägliches Lernen</h3><ol><li><strong>Schließen Sie die App</strong></li><li><strong>Sperren Sie Ihr Telefon</strong> und <strong>entsperren Sie es</strong></li><li>Eine <strong>Benachrichtigung</strong> erscheint</li><li><strong>Tippen Sie auf die Benachrichtigung</strong></li></ol></div>
+                <h3>📧 Kontakt</h3><div class="developer"><strong>Entwickler: ADIL AH</strong><br>Email: <a href="mailto:sarasami19942@gmail.com">sarasami19942@gmail.com</a></div>
+                <div class="date">Letzte Aktualisierung: 1. April 2026</div>
+            </div>
+            
+            <!-- Russian -->
+            <div id="content-ru" class="lang-content">
+                <h2>📱 Руководство пользователя ScreenWise</h2>
+                <p>Добро пожаловать в ScreenWise! Это руководство поможет вам правильно использовать приложение.</p>
+                <div class="step"><h3>🚀 Шаг 1: Начальная настройка</h3><ol><li>Откройте приложение в первый раз</li><li>Выберите <strong>Родной язык</strong></li><li>Выберите <strong>Язык для изучения</strong></li><li>Выберите <strong>Ежедневный лимит фактов</strong></li><li>Нажмите <strong>💾 Сохранить настройки</strong></li></ol></div>
+                <div class="step"><h3>🔔 Шаг 2: Ежедневное обучение</h3><ol><li><strong>Закройте приложение</strong></li><li><strong>Заблокируйте телефон</strong> затем <strong>разблокируйте</strong></li><li>Появится <strong>уведомление</strong></li></ol></div>
+                <h3>📧 Свяжитесь с нами</h3><div class="developer"><strong>Разработчик: ADIL AH</strong><br>Email: <a href="mailto:sarasami19942@gmail.com">sarasami19942@gmail.com</a></div>
+                <div class="date">Последнее обновление: 1 апреля 2026</div>
+            </div>
+            
+            <!-- Chinese -->
+            <div id="content-zh" class="lang-content">
+                <h2>📱 ScreenWise 用户指南</h2>
+                <p>欢迎使用ScreenWise！本指南将帮助您正确使用应用程序。</p>
+                <div class="step"><h3>🚀 步骤1：初始设置</h3><ol><li>首次打开应用程序</li><li>选择您的<strong>母语</strong></li><li>选择您要学习的<strong>语言</strong></li><li>选择<strong>每日事实限制</strong></li><li>点击<strong>💾 保存设置</strong></li></ol></div>
+                <div class="step"><h3>🔔 步骤2：每日学习</h3><ol><li><strong>关闭应用程序</strong></li><li><strong>锁定手机</strong>然后<strong>解锁</strong></li><li>将出现<strong>通知</strong></li></ol></div>
+                <h3>📧 联系我们</h3><div class="developer"><strong>开发者：ADIL AH</strong><br>电子邮件：<a href="mailto:sarasami19942@gmail.com">sarasami19942@gmail.com</a></div>
+                <div class="date">最后更新：2026年4月1日</div>
+            </div>
+            
+            <!-- Japanese -->
+            <div id="content-ja" class="lang-content">
+                <h2>📱 ScreenWise ユーザーガイド</h2>
+                <p>ScreenWiseへようこそ！このガイドはアプリを正しく使用するのに役立ちます。</p>
+                <div class="step"><h3>🚀 ステップ1：初期設定</h3><ol><li>初めてアプリを開く</li><li><strong>母国語</strong>を選択</li><li>学習したい<strong>言語</strong>を選択</li><li><strong>1日あたりの事実数</strong>を選択</li><li><strong>💾 設定を保存</strong>をタップ</li></ol></div>
+                <div class="step"><h3>🔔 ステップ2：毎日の学習</h3><ol><li><strong>アプリを閉じる</strong></li><li><strong>携帯電話をロック</strong>して<strong>ロックを解除</strong></li><li><strong>通知</strong>が表示されます</li></ol></div>
+                <h3>📧 お問い合わせ</h3><div class="developer"><strong>開発者：ADIL AH</strong><br>メール：<a href="mailto:sarasami19942@gmail.com">sarasami19942@gmail.com</a></div>
+                <div class="date">最終更新日：2026年4月1日</div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>© 2026 ScreenWise - All Rights Reserved</p>
+        </div>
+    </div>
+    
+    <script>
+        const langBtns = document.querySelectorAll('.lang-btn');
+        const langContents = document.querySelectorAll('.lang-content');
+        function switchLanguage(lang) {
+            langContents.forEach(c => c.classList.remove('active'));
+            const active = document.getElementById(`content-${lang}`);
+            if (active) active.classList.add('active');
+            langBtns.forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) btn.classList.add('active');
+            });
+        }
+        langBtns.forEach(btn => btn.addEventListener('click', () => switchLanguage(btn.getAttribute('data-lang'))));
+        const browserLang = navigator.language.split('-')[0];
+        const supported = ['ar', 'en', 'fr', 'es', 'de', 'ru', 'zh', 'ja'];
+        switchLanguage(supported.includes(browserLang) ? browserLang : 'en');
+    </script>
+</body>
+</html>
