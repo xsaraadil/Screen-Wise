@@ -53,6 +53,7 @@
         p { margin-bottom: 15px; color: #333; }
         ul, ol { margin: 15px 0 15px 30px; }
         li { margin-bottom: 8px; color: #555; }
+        .intro { background: linear-gradient(135deg, #e8f5e9, #c8e6c9); padding: 25px; border-radius: 15px; margin-bottom: 30px; border-left: 5px solid #4CAF50; }
         .step { background: #e3f2fd; padding: 15px; border-radius: 10px; margin: 15px 0; border-left: 4px solid #2196F3; }
         .tip { background: #fff3e0; padding: 15px; border-radius: 10px; margin: 15px 0; border-left: 4px solid #ff9800; }
         .warning { background: #ffebee; padding: 15px; border-radius: 10px; margin: 15px 0; border-left: 4px solid #f44336; }
@@ -60,6 +61,10 @@
         .developer { background: #e3f2fd; padding: 15px; border-radius: 10px; margin-top: 20px; text-align: center; }
         .developer a { color: #2196F3; text-decoration: none; }
         .date { font-size: 12px; color: #999; margin-top: 20px; }
+        .highlight { color: #2196F3; font-weight: bold; }
+        .boredom-solution { display: flex; gap: 15px; flex-wrap: wrap; margin: 20px 0; }
+        .solution-card { background: white; padding: 15px; border-radius: 12px; flex: 1; min-width: 200px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); text-align: center; }
+        .solution-card span { font-size: 2rem; display: block; margin-bottom: 10px; }
         @media (max-width: 768px) { .content { padding: 20px; } .header h1 { font-size: 1.8rem; } }
     </style>
 </head>
@@ -84,8 +89,22 @@
         <div class="content">
             <!-- Arabic -->
             <div id="content-ar" class="lang-content">
+                <!-- مقدمة جديدة عن أهمية التعلم بدون ملل -->
+                <div class="intro">
+                    <h2>🌟 لماذا تتعلم لغات يومياً؟ وكيف نتغلب على الملل؟</h2>
+                    <p>تعلم لغة جديدة هو استثمار في مستقبلك، لكن الكثيرين يتوقفون بسبب <strong class="highlight">الملل</strong> أو الروتين المتكرر. الحقيقة أن تعلم اللغة يحتاج إلى <strong>الاستمرارية اليومية</strong> وليس إلى ساعات طويلة.</p>
+                    <p>📊 <strong>هل تعلم؟</strong> الدراسات تظهر أن تعلم <strong>15-20 دقيقة فقط يومياً</strong> أكثر فعالية من دراسة 3 ساعات مرة واحدة في الأسبوع! العقل يتعلم بشكل أفضل من خلال التعرض المنتظم والمتكرر.</p>
+                    <p>😟 <strong>مشكلة الملل:</strong> معظم تطبيقات تعلم اللغات تصبح مملة بعد فترة لأنها تكرر نفس الدروس والتمارين. هنا يأتي دور <strong>LinguaGlance</strong>!</p>
+                    <div class="boredom-solution">
+                        <div class="solution-card"><span>🎲</span><strong>محتوى متنوع</strong><br>معلومات جديدة كل يوم من Wikipedia ومكتبتنا</div>
+                        <div class="solution-card"><span>🌍</span><strong>لغات متعددة</strong><br>تعلم 8 لغات مختلفة بنفس الوقت</div>
+                        <div class="solution-card"><span>📱</span><strong>بدون جهد</strong><br>تتعلم وأنت تفتح شاشة هاتفك فقط!</div>
+                    </div>
+                    <p><strong>✨ LinguaGlance يحل مشكلة الملل:</strong> بدلاً من الجلوس لساعات، التطبيق يعلمك تلقائياً كل مرة تفتح فيها هاتفك. معلومات جديدة، متنوعة، ومترجمة فوراً. لا ملل، لا روتين، فقط تعلم مستمر بدون أن تشعر!</p>
+                </div>
+                
                 <h2>📱 دليل استخدام تطبيق LinguaGlance</h2>
-                <p>مرحباً بك في LinguaGlance! هذا الدليل سيساعدك على استخدام التطبيق بشكل صحيح والاستفادة القصوى من جميع الميزات.</p>
+                <p>مرحباً بك! هذا الدليل سيساعدك على استخدام التطبيق بشكل صحيح والاستفادة القصوى من جميع الميزات.</p>
                 
                 <div class="step">
                     <h3>🚀 الخطوة 1: الإعدادات الأولية</h3>
@@ -104,12 +123,13 @@
                 </div>
                 
                 <div class="step">
-                    <h3>🔔 الخطوة 3: التعلم اليومي</h3>
+                    <h3>🔔 الخطوة 3: التعلم اليومي (بدون ملل!)</h3>
                     <ol>
                         <li><strong>أغلق التطبيق</strong> (اضغط زر الصفحة الرئيسية)</li>
                         <li><strong>اقفل هاتفك</strong> ثم <strong>افتحه</strong></li>
                         <li>ستظهر <strong>إشعار</strong> يحتوي على معلومة جديدة بلغتين</li>
                         <li><strong>اضغط على الإشعار</strong> لرؤية التفاصيل الكاملة</li>
+                        <li>كرر العملية يومياً - كل مرة تفتح هاتفك تتعلم شيئاً جديداً!</li>
                     </ol>
                 </div>
                 
@@ -139,6 +159,7 @@
                         <li><strong>اترك التطبيق يعمل في الخلفية</strong> للحصول على إشعارات مستمرة</li>
                         <li><strong>وفر اتصال بالإنترنت</strong> للحصول على معلومات جديدة من Wikipedia</li>
                         <li><strong>فعّل "عدم تقييد البطارية"</strong> للهواتف الصينية (شاومي، هواوي، أوبو)</li>
+                        <li><strong>لا تحتاج إلى وقت طويل</strong> - فقط افتح هاتفك كالمعتاد وتعلم!</li>
                     </ul>
                 </div>
                 
@@ -170,6 +191,7 @@
                     <li><strong>لا تظهر إشعارات؟</strong> → تأكد من منح إذن الإشعارات في إعدادات الهاتف</li>
                     <li><strong>لا تظهر ترجمة؟</strong> → تأكد من اتصال الإنترنت</li>
                     <li><strong>الكلمات المفضلة لا تحفظ؟</strong> → لا تحذف التطبيق، جميع البيانات مخزنة محلياً</li>
+                    <li><strong>تشعر بالملل؟</strong> → غير الفئة أو اللغة المستهدفة للحصول على محتوى جديد ومتنوع!</li>
                 </ul>
                 
                 <h3>📧 اتصل بنا</h3>
@@ -182,6 +204,20 @@
             
             <!-- English -->
             <div id="content-en" class="lang-content">
+                <!-- New introduction about learning without boredom -->
+                <div class="intro">
+                    <h2>🌟 Why Learn Languages Daily? And How to Overcome Boredom?</h2>
+                    <p>Learning a new language is an investment in your future, but many stop because of <strong class="highlight">boredom</strong> or repetitive routines. The truth is, language learning needs <strong>daily consistency</strong>, not long hours.</p>
+                    <p>📊 <strong>Did you know?</strong> Studies show that learning <strong>just 15-20 minutes daily</strong> is more effective than studying 3 hours once a week! Your brain learns best through regular, repeated exposure.</p>
+                    <p>😟 <strong>The Boredom Problem:</strong> Most language apps become boring over time because they repeat the same lessons and exercises. This is where <strong>LinguaGlance</strong> comes in!</p>
+                    <div class="boredom-solution">
+                        <div class="solution-card"><span>🎲</span><strong>Varied Content</strong><br>New facts daily from Wikipedia & our library</div>
+                        <div class="solution-card"><span>🌍</span><strong>Multiple Languages</strong><br>Learn 8 different languages at once</div>
+                        <div class="solution-card"><span>📱</span><strong>Effortless</strong><br>Learn just by unlocking your phone!</div>
+                    </div>
+                    <p><strong>✨ How LinguaGlance Solves Boredom:</strong> Instead of sitting for hours, the app teaches you automatically every time you unlock your phone. New, varied, instantly translated information. No boredom, no routine, just continuous learning without even noticing!</p>
+                </div>
+                
                 <h2>📱 LinguaGlance User Guide</h2>
                 <p>Welcome to LinguaGlance! This guide will help you use the app correctly and get the most out of all features.</p>
                 
@@ -202,12 +238,13 @@
                 </div>
                 
                 <div class="step">
-                    <h3>🔔 Step 3: Daily Learning</h3>
+                    <h3>🔔 Step 3: Daily Learning (No Boredom!)</h3>
                     <ol>
                         <li><strong>Close the app</strong> (press the home button)</li>
                         <li><strong>Lock your phone</strong> then <strong>unlock it</strong></li>
                         <li>A <strong>notification</strong> will appear with a new fact in both languages</li>
                         <li><strong>Tap the notification</strong> to see full details</li>
+                        <li>Repeat daily - every time you unlock your phone, you learn something new!</li>
                     </ol>
                 </div>
                 
@@ -237,6 +274,7 @@
                         <li><strong>Keep the app running in the background</strong> for continuous notifications</li>
                         <li><strong>Ensure internet connection</strong> to get new facts from Wikipedia</li>
                         <li><strong>Enable "Unrestricted battery"</strong> for Chinese phones (Xiaomi, Huawei, Oppo)</li>
+                        <li><strong>No need for long study sessions</strong> - just unlock your phone as usual and learn!</li>
                     </ul>
                 </div>
                 
@@ -268,6 +306,7 @@
                     <li><strong>No notifications?</strong> → Check notification permissions in phone settings</li>
                     <li><strong>No translation?</strong> → Check your internet connection</li>
                     <li><strong>Favorite words not saving?</strong> → Don't delete the app; all data is stored locally</li>
+                    <li><strong>Feeling bored?</strong> → Change the category or target language for fresh, varied content!</li>
                 </ul>
                 
                 <h3>📧 Contact Us</h3>
@@ -278,101 +317,82 @@
                 <div class="date">Last Updated: April 1, 2026</div>
             </div>
             
-            <!-- French -->
+            <!-- French (simplified with intro) -->
             <div id="content-fr" class="lang-content">
+                <div class="intro">
+                    <h2>🌟 Pourquoi apprendre des langues quotidiennement ? Comment vaincre l'ennui ?</h2>
+                    <p>Apprendre une nouvelle langue est un investissement dans votre avenir, mais beaucoup s'arrêtent à cause de <strong>l'ennui</strong>. La vérité est que l'apprentissage nécessite une <strong>constance quotidienne</strong>, pas de longues heures.</p>
+                    <p><strong>✨ LinguaGlance résout l'ennui :</strong> Au lieu de vous asseoir pendant des heures, l'application vous enseigne automatiquement à chaque déverrouillage de votre téléphone. Des informations nouvelles, variées, instantanément traduites. Pas d'ennui, pas de routine, juste un apprentissage continu sans même y penser !</p>
+                </div>
                 <h2>📱 Guide d'utilisation de LinguaGlance</h2>
-                <p>Bienvenue sur LinguaGlance ! Ce guide vous aidera à utiliser l'application correctement et à tirer le meilleur parti de toutes les fonctionnalités.</p>
-                
-                <div class="step">
-                    <h3>🚀 Étape 1 : Configuration initiale</h3>
-                    <ol>
-                        <li>Ouvrez l'application pour la première fois</li>
-                        <li>Sélectionnez votre <strong>Langue maternelle</strong></li>
-                        <li>Sélectionnez la <strong>Langue que vous voulez apprendre</strong></li>
-                        <li>Sélectionnez la <strong>Limite quotidienne de faits</strong></li>
-                        <li>Appuyez sur <strong>💾 Enregistrer les paramètres</strong></li>
-                    </ol>
-                </div>
-                
-                <div class="step">
-                    <h3>📖 Étape 2 : Autorisations</h3>
-                    <p>Lorsque vous y êtes invité, appuyez sur <strong>Autoriser</strong> pour les notifications. Ceci est essentiel pour afficher les faits lors du déverrouillage.</p>
-                </div>
-                
-                <div class="step">
-                    <h3>🔔 Étape 3 : Apprentissage quotidien</h3>
-                    <ol>
-                        <li><strong>Fermez l'application</strong> (appuyez sur le bouton d'accueil)</li>
-                        <li><strong>Verrouillez votre téléphone</strong> puis <strong>déverrouillez-le</strong></li>
-                        <li>Une <strong>notification</strong> apparaîtra avec un nouveau fait dans les deux langues</li>
-                        <li><strong>Appuyez sur la notification</strong> pour voir les détails complets</li>
-                    </ol>
-                </div>
-                
-                <div class="tip">
-                    <h3>💡 Conseils importants</h3>
-                    <ul>
-                        <li><strong>N'utilisez pas "glisser pour fermer"</strong> pour fermer l'application</li>
-                        <li><strong>Laissez l'application s'exécuter en arrière-plan</strong></li>
-                        <li><strong>Assurez-vous d'avoir une connexion internet</strong></li>
-                    </ul>
-                </div>
-                
-                <h3>📧 Contactez-nous</h3>
-                <div class="developer">
-                    <strong>Développeur: ADIL AH</strong><br>
-                    Email: <a href="mailto:sarasami19942@gmail.com">sarasami19942@gmail.com</a>
-                </div>
+                <div class="step"><h3>🚀 Étape 1 : Configuration</h3><ol><li>Ouvrez l'application</li><li>Sélectionnez votre <strong>Langue maternelle</strong></li><li>Sélectionnez la <strong>Langue à apprendre</strong></li><li>Sélectionnez la <strong>Limite quotidienne</strong></li><li>Appuyez sur <strong>💾 Enregistrer</strong></li></ol></div>
+                <div class="step"><h3>🔔 Étape 2 : Apprentissage quotidien</h3><ol><li><strong>Fermez l'application</strong></li><li><strong>Verrouillez puis déverrouillez</strong> votre téléphone</li><li>Une <strong>notification</strong> apparaîtra</li><li><strong>Appuyez sur la notification</strong></li></ol></div>
+                <div class="tip"><h3>💡 Conseils</h3><ul><li>Ne fermez pas l'application par glissement</li><li>Laissez l'application en arrière-plan</li><li>Assurez-vous d'avoir internet</li></ul></div>
+                <h3>📧 Contact</h3><div class="developer"><strong>Développeur: ADIL AH</strong><br>Email: <a href="mailto:sarasami19942@gmail.com">sarasami19942@gmail.com</a></div>
                 <div class="date">Dernière mise à jour: 1 avril 2026</div>
             </div>
             
-            <!-- Spanish -->
+            <!-- Spanish (simplified with intro) -->
             <div id="content-es" class="lang-content">
+                <div class="intro">
+                    <h2>🌟 ¿Por qué aprender idiomas a diario? ¿Cómo vencer el aburrimiento?</h2>
+                    <p><strong>✨ LinguaGlance resuelve el aburrimiento:</strong> En lugar de sentarte horas, la aplicación te enseña automáticamente cada vez que desbloqueas tu teléfono. ¡Información nueva, variada y traducida al instante!</p>
+                </div>
                 <h2>📱 Guía de Usuario de LinguaGlance</h2>
-                <p>¡Bienvenido a LinguaGlance! Esta guía te ayudará a usar la aplicación correctamente.</p>
-                <div class="step"><h3>🚀 Paso 1: Configuración inicial</h3><ol><li>Abre la aplicación por primera vez</li><li>Selecciona tu <strong>Idioma nativo</strong></li><li>Selecciona el <strong>Idioma que quieres aprender</strong></li><li>Selecciona el <strong>Límite diario de datos</strong></li><li>Toca <strong>💾 Guardar configuración</strong></li></ol></div>
-                <div class="step"><h3>🔔 Paso 2: Aprendizaje diario</h3><ol><li><strong>Cierra la aplicación</strong></li><li><strong>Bloquea tu teléfono</strong> luego <strong>desbloquéalo</strong></li><li>Aparecerá una <strong>notificación</strong></li><li><strong>Toca la notificación</strong> para ver los detalles</li></ol></div>
-                <div class="tip"><h3>💡 Consejos</h3><ul><li>No cierres la aplicación deslizando</li><li>Mantén la aplicación en segundo plano</li><li>Asegúrate de tener conexión a internet</li></ul></div>
+                <div class="step"><h3>🚀 Paso 1: Configuración</h3><ol><li>Abre la aplicación</li><li>Selecciona tu <strong>Idioma nativo</strong></li><li>Selecciona el <strong>Idioma a aprender</strong></li><li>Selecciona el <strong>Límite diario</strong></li><li>Toca <strong>💾 Guardar</strong></li></ol></div>
+                <div class="step"><h3>🔔 Paso 2: Aprendizaje diario</h3><ol><li><strong>Cierra la aplicación</strong></li><li><strong>Bloquea y desbloquea</strong> tu teléfono</li><li>Aparecerá una <strong>notificación</strong></li></ol></div>
                 <h3>📧 Contacto</h3><div class="developer"><strong>Desarrollador: ADIL AH</strong><br>Email: <a href="mailto:sarasami19942@gmail.com">sarasami19942@gmail.com</a></div>
                 <div class="date">Última actualización: 1 abril 2026</div>
             </div>
             
-            <!-- German -->
+            <!-- German (simplified with intro) -->
             <div id="content-de" class="lang-content">
+                <div class="intro">
+                    <h2>🌟 Warum täglich Sprachen lernen? Wie Langeweile überwinden?</h2>
+                    <p><strong>✨ LinguaGlance löst Langeweile:</strong> Statt stundenlang zu sitzen, lehrt die App Sie automatisch jedes Mal, wenn Sie Ihr Telefon entsperren. Neue, abwechslungsreiche, sofort übersetzte Informationen!</p>
+                </div>
                 <h2>📱 LinguaGlance Benutzerhandbuch</h2>
-                <p>Willkommen bei LinguaGlance! Dieses Handbuch hilft Ihnen, die App richtig zu nutzen.</p>
-                <div class="step"><h3>🚀 Schritt 1: Ersteinrichtung</h3><ol><li>Öffnen Sie die App zum ersten Mal</li><li>Wählen Sie Ihre <strong>Muttersprache</strong></li><li>Wählen Sie die <strong>zu lernende Sprache</strong></li><li>Wählen Sie das <strong>Tägliche Faktenlimit</strong></li><li>Tippen Sie auf <strong>💾 Einstellungen speichern</strong></li></ol></div>
-                <div class="step"><h3>🔔 Schritt 2: Tägliches Lernen</h3><ol><li><strong>Schließen Sie die App</strong></li><li><strong>Sperren Sie Ihr Telefon</strong> und <strong>entsperren Sie es</strong></li><li>Eine <strong>Benachrichtigung</strong> erscheint</li><li><strong>Tippen Sie auf die Benachrichtigung</strong></li></ol></div>
+                <div class="step"><h3>🚀 Schritt 1: Einrichtung</h3><ol><li>Öffnen Sie die App</li><li>Wählen Sie Ihre <strong>Muttersprache</strong></li><li>Wählen Sie die <strong>Zielsprache</strong></li><li>Wählen Sie das <strong>Tägliche Limit</strong></li><li>Tippen Sie auf <strong>💾 Speichern</strong></li></ol></div>
+                <div class="step"><h3>🔔 Schritt 2: Tägliches Lernen</h3><ol><li><strong>Schließen Sie die App</strong></li><li><strong>Sperren und entsperren</strong> Sie Ihr Telefon</li><li>Eine <strong>Benachrichtigung</strong> erscheint</li></ol></div>
                 <h3>📧 Kontakt</h3><div class="developer"><strong>Entwickler: ADIL AH</strong><br>Email: <a href="mailto:sarasami19942@gmail.com">sarasami19942@gmail.com</a></div>
                 <div class="date">Letzte Aktualisierung: 1. April 2026</div>
             </div>
             
-            <!-- Russian -->
+            <!-- Russian (simplified with intro) -->
             <div id="content-ru" class="lang-content">
+                <div class="intro">
+                    <h2>🌟 Почему учить языки ежедневно? Как победить скуку?</h2>
+                    <p><strong>✨ LinguaGlance решает проблему скуки:</strong> Вместо того чтобы сидеть часами, приложение учит вас автоматически каждый раз, когда вы разблокируете телефон. Новая, разнообразная, мгновенно переведённая информация!</p>
+                </div>
                 <h2>📱 Руководство пользователя LinguaGlance</h2>
-                <p>Добро пожаловать в LinguaGlance! Это руководство поможет вам правильно использовать приложение.</p>
-                <div class="step"><h3>🚀 Шаг 1: Начальная настройка</h3><ol><li>Откройте приложение в первый раз</li><li>Выберите <strong>Родной язык</strong></li><li>Выберите <strong>Язык для изучения</strong></li><li>Выберите <strong>Ежедневный лимит фактов</strong></li><li>Нажмите <strong>💾 Сохранить настройки</strong></li></ol></div>
-                <div class="step"><h3>🔔 Шаг 2: Ежедневное обучение</h3><ol><li><strong>Закройте приложение</strong></li><li><strong>Заблокируйте телефон</strong> затем <strong>разблокируйте</strong></li><li>Появится <strong>уведомление</strong></li></ol></div>
-                <h3>📧 Свяжитесь с нами</h3><div class="developer"><strong>Разработчик: ADIL AH</strong><br>Email: <a href="mailto:sarasami19942@gmail.com">sarasami19942@gmail.com</a></div>
+                <div class="step"><h3>🚀 Шаг 1: Настройка</h3><ol><li>Откройте приложение</li><li>Выберите <strong>Родной язык</strong></li><li>Выберите <strong>Изучаемый язык</strong></li><li>Выберите <strong>Дневной лимит</strong></li><li>Нажмите <strong>💾 Сохранить</strong></li></ol></div>
+                <div class="step"><h3>🔔 Шаг 2: Ежедневное обучение</h3><ol><li><strong>Закройте приложение</strong></li><li><strong>Заблокируйте и разблокируйте</strong> телефон</li><li>Появится <strong>уведомление</strong></li></ol></div>
+                <h3>📧 Контакты</h3><div class="developer"><strong>Разработчик: ADIL AH</strong><br>Email: <a href="mailto:sarasami19942@gmail.com">sarasami19942@gmail.com</a></div>
                 <div class="date">Последнее обновление: 1 апреля 2026</div>
             </div>
             
-            <!-- Chinese -->
+            <!-- Chinese (simplified with intro) -->
             <div id="content-zh" class="lang-content">
+                <div class="intro">
+                    <h2>🌟 为什么要每天学习语言？如何克服无聊？</h2>
+                    <p><strong>✨ LinguaGlance 解决无聊问题：</strong> 无需长时间坐着，每次解锁手机时应用都会自动教你。新鲜、多样、即时翻译的信息！</p>
+                </div>
                 <h2>📱 LinguaGlance 用户指南</h2>
-                <p>欢迎使用LinguaGlance！本指南将帮助您正确使用应用程序。</p>
-                <div class="step"><h3>🚀 步骤1：初始设置</h3><ol><li>首次打开应用程序</li><li>选择您的<strong>母语</strong></li><li>选择您要学习的<strong>语言</strong></li><li>选择<strong>每日事实限制</strong></li><li>点击<strong>💾 保存设置</strong></li></ol></div>
-                <div class="step"><h3>🔔 步骤2：每日学习</h3><ol><li><strong>关闭应用程序</strong></li><li><strong>锁定手机</strong>然后<strong>解锁</strong></li><li>将出现<strong>通知</strong></li></ol></div>
+                <div class="step"><h3>🚀 步骤1：初始设置</h3><ol><li>首次打开应用程序</li><li>选择您的<strong>母语</strong></li><li>选择您要学习的<strong>语言</strong></li><li>选择<strong>每日限制</strong></li><li>点击<strong>💾 保存设置</strong></li></ol></div>
+                <div class="step"><h3>🔔 步骤2：每日学习</h3><ol><li><strong>关闭应用程序</strong></li><li><strong>锁定并解锁</strong>您的手机</li><li>将出现<strong>通知</strong></li></ol></div>
                 <h3>📧 联系我们</h3><div class="developer"><strong>开发者：ADIL AH</strong><br>电子邮件：<a href="mailto:sarasami19942@gmail.com">sarasami19942@gmail.com</a></div>
                 <div class="date">最后更新：2026年4月1日</div>
             </div>
             
-            <!-- Japanese -->
+            <!-- Japanese (simplified with intro) -->
             <div id="content-ja" class="lang-content">
+                <div class="intro">
+                    <h2>🌟 なぜ毎日言語を学ぶのか？退屈を克服する方法は？</h2>
+                    <p><strong>✨ LinguaGlance が退屈を解決：</strong> 何時間も座っている代わりに、スマホをロック解除するたびに自動的に学習できます。新しく、多様で、即座に翻訳された情報！</p>
+                </div>
                 <h2>📱 LinguaGlance ユーザーガイド</h2>
-                <p>LinguaGlanceへようこそ！このガイドはアプリを正しく使用するのに役立ちます。</p>
-                <div class="step"><h3>🚀 ステップ1：初期設定</h3><ol><li>初めてアプリを開く</li><li><strong>母国語</strong>を選択</li><li>学習したい<strong>言語</strong>を選択</li><li><strong>1日あたりの事実数</strong>を選択</li><li><strong>💾 設定を保存</strong>をタップ</li></ol></div>
-                <div class="step"><h3>🔔 ステップ2：毎日の学習</h3><ol><li><strong>アプリを閉じる</strong></li><li><strong>携帯電話をロック</strong>して<strong>ロックを解除</strong></li><li><strong>通知</strong>が表示されます</li></ol></div>
+                <div class="step"><h3>🚀 ステップ1：初期設定</h3><ol><li>アプリを開く</li><li><strong>母国語</strong>を選択</li><li>学習したい<strong>言語</strong>を選択</li><li><strong>1日あたりの制限</strong>を選択</li><li><strong>💾 設定を保存</strong>をタップ</li></ol></div>
+                <div class="step"><h3>🔔 ステップ2：毎日の学習</h3><ol><li><strong>アプリを閉じる</strong></li><li><strong>ロックしてロック解除</strong>する</li><li><strong>通知</strong>が表示されます</li></ol></div>
                 <h3>📧 お問い合わせ</h3><div class="developer"><strong>開発者：ADIL AH</strong><br>メール：<a href="mailto:sarasami19942@gmail.com">sarasami19942@gmail.com</a></div>
                 <div class="date">最終更新日：2026年4月1日</div>
             </div>
