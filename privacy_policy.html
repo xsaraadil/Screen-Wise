@@ -82,6 +82,10 @@
             color: #555;
             margin: 20px 0 10px 0;
         }
+        h4 {
+            color: #666;
+            margin: 15px 0 8px 0;
+        }
         p {
             margin-bottom: 15px;
             color: #333;
@@ -118,10 +122,24 @@
             margin: 15px 0;
             border-left: 4px solid #ff9800;
         }
+        .ads-box {
+            background: #e8f5e9;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 15px 0;
+            border-left: 4px solid #4CAF50;
+        }
         .date {
             font-size: 12px;
             color: #999;
             margin-top: 20px;
+        }
+        a {
+            color: #2196F3;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
         @media (max-width: 768px) {
             .container { margin: 0; }
@@ -180,6 +198,30 @@
                     <li><strong>MyMemory API:</strong> للترجمة (يتم إرسال النص فقط للترجمة)</li>
                 </ul>
                 
+                <!-- ==================== قسم الإعلانات ==================== -->
+                <h3>📢 الإعلانات في التطبيق</h3>
+                <p>يستخدم تطبيق <strong>LinguaGlance</strong> خدمة <strong>Google AdMob</strong> لعرض الإعلانات. هذا يساعدنا في الحفاظ على التطبيق مجانياً ودعم تطويره وتحسينه.</p>
+                
+                <div class="ads-box">
+                    <h4>📌 أنواع الإعلانات المستخدمة:</h4>
+                    <ul>
+                        <li><strong>📱 Banner Ads (إعلانات البنر):</strong> تظهر في أسفل بعض شاشات التطبيق مثل الشاشة الرئيسية وشاشة القواعد وشاشة تفاصيل المعلومات. هذه الإعلانات لا تعيق استخدام التطبيق.</li>
+                        <li><strong>🔄 Interstitial Ads (إعلانات بينية):</strong> تظهر عند القيام ببعض الإجراءات مثل حذف الكلمات المفضلة أو حذف النصوص المحفوظة. تظهر هذه الإعلانات بشكل كامل على الشاشة ويمكن إغلاقها بعد بضع ثوانٍ.</li>
+                    </ul>
+                </div>
+                
+                <h4>🔒 خصوصية الإعلانات:</h4>
+                <ul>
+                    <li>قد تجمع Google AdMob بيانات <strong>غير شخصية</strong> (مثل نوع الجهاز، نظام التشغيل، الموقع التقريبي) لتحسين تجربة الإعلانات وعرض إعلانات ذات صلة.</li>
+                    <li><strong>لا يتم جمع أي معلومات شخصية</strong> عنك مثل الاسم أو البريد الإلكتروني أو رقم الهاتف من خلال الإعلانات.</li>
+                    <li>يمكنك تخصيص إعدادات الإعلانات من خلال إعدادات جهازك (الإعلانات المخصصة).</li>
+                    <li>لمزيد من المعلومات، يرجى الاطلاع على <a href="https://policies.google.com/technologies/ads" target="_blank">سياسة Google للإعلانات</a>.</li>
+                </ul>
+                
+                <div class="permission-box">
+                    <p><strong>💡 ملاحظة مهمة:</strong> الإعلانات تظهر فقط عند استخدام التطبيق ولا تتعارض مع تجربة التعلم. يمكنك استخدام التطبيق <strong>مجاناً بالكامل</strong> مع وجود الإعلانات. نشكرك على دعمك!</p>
+                </div>
+                
                 <h3>🔐 الأذونات التي يستخدمها التطبيق</h3>
                 <div class="permission-box">
                     <p><strong>📢 POST_NOTIFICATIONS</strong><br>
@@ -195,17 +237,17 @@
                     يستخدم هذا الإذن لإعادة تشغيل خدمة التطبيق التلقائية بعد إعادة تشغيل الجهاز، لضمان استمرار عرض المعلومات التعليمية دون الحاجة لفتح التطبيق يدوياً.</p>
                     
                     <p><strong>🌐 INTERNET & ACCESS_NETWORK_STATE</strong><br>
-                    يستخدم هذا الإذن للاتصال بخدمات الترجمة (MyMemory API) وموسوعة Wikipedia لجلب معلومات تعليمية جديدة وترجمتها.</p>
+                    يستخدم هذا الإذن للاتصال بخدمات الترجمة (MyMemory API) وموسوعة Wikipedia لجلب معلومات تعليمية جديدة وترجمتها، وكذلك لعرض الإعلانات.</p>
                     
                     <p><strong>💤 WAKE_LOCK</strong><br>
                     يستخدم هذا الإذن لإبقاء الجهاز مستيقظاً أثناء عرض الإشعارات المهمة.</p>
                 </div>
                 
                 <h3>👶 خصوصية الأطفال</h3>
-                <p>تطبيق LinguaGlance مناسب لجميع الأعمار ولا يجمع معلومات شخصية عن الأطفال.</p>
+                <p>تطبيق LinguaGlance مناسب لجميع الأعمار ولا يجمع معلومات شخصية عن الأطفال. الإعلانات المعروضة مناسبة لجميع الفئات العمرية.</p>
                 
                 <h3>📧 اتصل بنا</h3>
-                <p>إذا كان لديك أي استفسار حول سياسة الخصوصية، يرجى التواصل معنا:</p>
+                <p>إذا كان لديك أي استفسار حول سياسة الخصوصية أو الإعلانات، يرجى التواصل معنا:</p>
                 <div class="developer">
                     <strong>المطور: ADIL AH</strong><br>
                     البريد الإلكتروني: <a href="mailto:sarasami19942@gmail.com">sarasami19942@gmail.com</a>
@@ -244,6 +286,30 @@
                     <li><strong>MyMemory API:</strong> For translation (only text is sent for translation)</li>
                 </ul>
                 
+                <!-- ==================== Ads Section ==================== -->
+                <h3>📢 Ads in the App</h3>
+                <p><strong>LinguaGlance</strong> uses <strong>Google AdMob</strong> to display advertisements. This helps us keep the app free and support its development and improvement.</p>
+                
+                <div class="ads-box">
+                    <h4>📌 Types of Ads Used:</h4>
+                    <ul>
+                        <li><strong>📱 Banner Ads:</strong> Appear at the bottom of some app screens such as the main screen, grammar screen, and fact details screen. These ads do not interfere with app usage.</li>
+                        <li><strong>🔄 Interstitial Ads:</strong> Appear when performing certain actions such as deleting favorite words or deleting saved texts. These ads appear full-screen and can be closed after a few seconds.</li>
+                    </ul>
+                </div>
+                
+                <h4>🔒 Ad Privacy:</h4>
+                <ul>
+                    <li>Google AdMob may collect <strong>non-personal data</strong> (such as device type, operating system, approximate location) to improve the ad experience and show relevant ads.</li>
+                    <li><strong>No personal information</strong> such as name, email, or phone number is collected through ads.</li>
+                    <li>You can customize ad settings through your device settings (personalized ads).</li>
+                    <li>For more information, please review <a href="https://policies.google.com/technologies/ads" target="_blank">Google's Advertising Policy</a>.</li>
+                </ul>
+                
+                <div class="permission-box">
+                    <p><strong>💡 Important Note:</strong> Ads only appear when using the app and do not interfere with the learning experience. You can use the app <strong>completely free</strong> with ads. Thank you for your support!</p>
+                </div>
+                
                 <h3>🔐 Permissions Used by the App</h3>
                 <div class="permission-box">
                     <p><strong>📢 POST_NOTIFICATIONS</strong><br>
@@ -259,17 +325,17 @@
                     Used to automatically restart the app's service after device reboot, ensuring continued display of educational information without needing to manually open the app.</p>
                     
                     <p><strong>🌐 INTERNET & ACCESS_NETWORK_STATE</strong><br>
-                    Used to connect to translation services (MyMemory API) and Wikipedia to fetch new educational facts and translations.</p>
+                    Used to connect to translation services (MyMemory API) and Wikipedia to fetch new educational facts and translations, as well as to display ads.</p>
                     
                     <p><strong>💤 WAKE_LOCK</strong><br>
                     Used to keep the device awake while displaying important notifications.</p>
                 </div>
                 
                 <h3>👶 Children's Privacy</h3>
-                <p>LinguaGlance is suitable for all ages and does not collect personal information from children.</p>
+                <p>LinguaGlance is suitable for all ages and does not collect personal information from children. Displayed ads are appropriate for all age groups.</p>
                 
                 <h3>📧 Contact Us</h3>
-                <p>If you have any questions about this privacy policy, please contact us:</p>
+                <p>If you have any questions about this privacy policy or ads, please contact us:</p>
                 <div class="developer">
                     <strong>Developer: ADIL AH</strong><br>
                     Email: <a href="mailto:sarasami19942@gmail.com">sarasami19942@gmail.com</a>
@@ -308,6 +374,25 @@
                     <li><strong>MyMemory API:</strong> Pour la traduction (seul le texte est envoyé pour traduction)</li>
                 </ul>
                 
+                <!-- ==================== Section Publicités ==================== -->
+                <h3>📢 Publicités dans l'application</h3>
+                <p><strong>LinguaGlance</strong> utilise <strong>Google AdMob</strong> pour afficher des publicités. Cela nous aide à garder l'application gratuite et à soutenir son développement et son amélioration.</p>
+                
+                <div class="ads-box">
+                    <h4>📌 Types de publicités utilisées:</h4>
+                    <ul>
+                        <li><strong>📱 Bannières publicitaires:</strong> Apparaissent en bas de certains écrans de l'application comme l'écran principal, l'écran de grammaire et l'écran des détails des faits.</li>
+                        <li><strong>🔄 Publicités interstitielles:</strong> Apparaissent lors de certaines actions comme la suppression de mots favoris ou de textes enregistrés.</li>
+                    </ul>
+                </div>
+                
+                <h4>🔒 Confidentialité des publicités:</h4>
+                <ul>
+                    <li>Google AdMob peut collecter des données <strong>non personnelles</strong> pour améliorer l'expérience publicitaire.</li>
+                    <li><strong>Aucune information personnelle</strong> n'est collectée via les publicités.</li>
+                    <li>Pour plus d'informations, consultez <a href="https://policies.google.com/technologies/ads" target="_blank">la politique publicitaire de Google</a>.</li>
+                </ul>
+                
                 <h3>🔐 Autorisations utilisées par l'application</h3>
                 <div class="permission-box">
                     <p><strong>📢 POST_NOTIFICATIONS</strong><br>
@@ -323,7 +408,7 @@
                     Utilisé pour redémarrer automatiquement le service de l'application après le redémarrage de l'appareil.</p>
                     
                     <p><strong>🌐 INTERNET & ACCESS_NETWORK_STATE</strong><br>
-                    Utilisé pour se connecter aux services de traduction et à Wikipedia.</p>
+                    Utilisé pour se connecter aux services de traduction, à Wikipedia et pour afficher les publicités.</p>
                 </div>
                 
                 <h3>👶 Vie privée des enfants</h3>
@@ -354,36 +439,29 @@
                     <li>Para personalizar su experiencia de aprendizaje</li>
                     <li>Para mostrar datos en los idiomas que elija</li>
                     <li>Para mejorar el rendimiento de la aplicación y la experiencia del usuario</li>
-                    <li>Para recordar sus palabras favoritas y configuraciones</li>
                 </ul>
                 
                 <h3>🌐 Compartir datos</h3>
                 <p><strong>No compartimos</strong> sus datos personales con terceros. Todos los datos se almacenan localmente en su dispositivo.</p>
                 
-                <h3>🔗 Servicios de terceros</h3>
-                <p>La aplicación utiliza servicios externos para mejorar su experiencia:</p>
-                <ul>
-                    <li><strong>Wikipedia API:</strong> Para obtener datos educativos (sus datos no se almacenan)</li>
-                    <li><strong>MyMemory API:</strong> Para traducción (solo se envía el texto para traducción)</li>
-                </ul>
+                <!-- ==================== Sección de Anuncios ==================== -->
+                <h3>📢 Anuncios en la aplicación</h3>
+                <p><strong>LinguaGlance</strong> utiliza <strong>Google AdMob</strong> para mostrar anuncios. Esto nos ayuda a mantener la aplicación gratuita.</p>
                 
-                <h3>🔐 Permisos utilizados por la aplicación</h3>
-                <div class="permission-box">
-                    <p><strong>📢 POST_NOTIFICATIONS</strong><br>
-                    Se utiliza para mostrar notificaciones educativas al desbloquear la pantalla.</p>
-                    
-                    <p><strong>🔄 SYSTEM_ALERT_WINDOW</strong><br>
-                    Se utiliza para mostrar contenido de la aplicación sobre otras aplicaciones.</p>
-                    
-                    <p><strong>⚙️ FOREGROUND_SERVICE</strong><br>
-                    Se utiliza para ejecutar un servicio en segundo plano que permanece activo incluso cuando la aplicación está cerrada.</p>
-                    
-                    <p><strong>📱 RECEIVE_BOOT_COMPLETED</strong><br>
-                    Se utiliza para reiniciar automáticamente el servicio de la aplicación después de reiniciar el dispositivo.</p>
+                <div class="ads-box">
+                    <h4>📌 Tipos de anuncios utilizados:</h4>
+                    <ul>
+                        <li><strong>📱 Banners:</strong> Aparecen en la parte inferior de algunas pantallas.</li>
+                        <li><strong>🔄 Anuncios Intersticiales:</strong> Aparecen al eliminar palabras favoritas o textos guardados.</li>
+                    </ul>
                 </div>
                 
-                <h3>👶 Privacidad de los niños</h3>
-                <p>LinguaGlance es adecuado para todas las edades y no recopila información personal de niños.</p>
+                <h4>🔒 Privacidad de los anuncios:</h4>
+                <ul>
+                    <li>Google AdMob puede recopilar datos <strong>no personales</strong>.</li>
+                    <li><strong>No se recopila información personal</strong> a través de los anuncios.</li>
+                    <li>Más información: <a href="https://policies.google.com/technologies/ads" target="_blank">Política de anuncios de Google</a>.</li>
+                </ul>
                 
                 <h3>📧 Contáctenos</h3>
                 <div class="developer">
@@ -396,35 +474,24 @@
             <!-- ==================== GERMAN ==================== -->
             <div id="content-de" class="lang-content">
                 <h2>🔒 Datenschutzerklärung</h2>
-                <p>Bei <strong>LinguaGlance</strong> verpflichten wir uns, Ihre Privatsphäre zu schützen. Diese Richtlinie erklärt, wie wir Ihre Informationen sammeln, verwenden und schützen.</p>
+                <p>Bei <strong>LinguaGlance</strong> verpflichten wir uns, Ihre Privatsphäre zu schützen.</p>
                 
                 <h3>📌 Informationen, die wir sammeln</h3>
                 <ul>
-                    <li><strong>App-Einstellungen:</strong> Ausgewählte Sprachen, tägliches Faktenlimit, Benachrichtigungseinstellungen</li>
-                    <li><strong>Lernfortschritt:</strong> Gespeicherte Lieblingswörter, angezeigte Faktenhistorie</li>
-                    <li><strong>Nutzungsdaten:</strong> Anzahl der App-Öffnungen, Anzahl der angezeigten Fakten</li>
+                    <li><strong>App-Einstellungen:</strong> Ausgewählte Sprachen, tägliches Faktenlimit</li>
+                    <li><strong>Lernfortschritt:</strong> Gespeicherte Lieblingswörter</li>
                 </ul>
                 
-                <h3>🔐 Wie wir Ihre Informationen verwenden</h3>
-                <ul>
-                    <li>Um Ihr Lernerlebnis zu personalisieren</li>
-                    <li>Um Fakten in den von Ihnen gewählten Sprachen anzuzeigen</li>
-                    <li>Um die App-Leistung und Benutzererfahrung zu verbessern</li>
-                </ul>
+                <!-- ==================== Werbeabschnitt ==================== -->
+                <h3>📢 Werbung in der App</h3>
+                <p><strong>LinguaGlance</strong> verwendet <strong>Google AdMob</strong> zur Anzeige von Werbung.</p>
                 
-                <h3>🌐 Datenweitergabe</h3>
-                <p>Wir <strong>geben Ihre personenbezogenen Daten nicht</strong> an Dritte weiter.</p>
-                
-                <h3>🔐 Vom App verwendete Berechtigungen</h3>
-                <div class="permission-box">
-                    <p><strong>📢 POST_NOTIFICATIONS</strong><br>
-                    Wird verwendet, um Bildungsbenachrichtigungen anzuzeigen, wenn Sie Ihren Bildschirm entsperren.</p>
-                    
-                    <p><strong>🔄 SYSTEM_ALERT_WINDOW</strong><br>
-                    Wird verwendet, um App-Inhalte über anderen Apps anzuzeigen.</p>
-                    
-                    <p><strong>⚙️ FOREGROUND_SERVICE</strong><br>
-                    Wird verwendet, um einen Hintergrunddienst auszuführen, der auch dann aktiv bleibt, wenn die App geschlossen ist.</p>
+                <div class="ads-box">
+                    <h4>📌 Verwendete Anzeigenarten:</h4>
+                    <ul>
+                        <li><strong>📱 Bannerwerbung:</strong> Unten auf einigen Bildschirmen</li>
+                        <li><strong>🔄 Interstitielle Anzeigen:</strong> Beim Löschen von Favoriten oder gespeicherten Texten</li>
+                    </ul>
                 </div>
                 
                 <h3>📧 Kontaktieren Sie uns</h3>
@@ -442,20 +509,20 @@
                 
                 <h3>📌 Информация, которую мы собираем</h3>
                 <ul>
-                    <li><strong>Настройки приложения:</strong> Выбранные языки, ежедневный лимит фактов, настройки уведомлений</li>
-                    <li><strong>Прогресс обучения:</strong> Сохраненные избранные слова, история показанных фактов</li>
+                    <li><strong>Настройки приложения:</strong> Выбранные языки, ежедневный лимит фактов</li>
+                    <li><strong>Прогресс обучения:</strong> Сохраненные избранные слова</li>
                 </ul>
                 
-                <h3>🌐 Передача данных</h3>
-                <p>Мы <strong>не передаем</strong> ваши личные данные третьим лицам.</p>
+                <!-- ==================== Раздел рекламы ==================== -->
+                <h3>📢 Реклама в приложении</h3>
+                <p><strong>LinguaGlance</strong> использует <strong>Google AdMob</strong> для показа рекламы.</p>
                 
-                <h3>🔐 Разрешения, используемые приложением</h3>
-                <div class="permission-box">
-                    <p><strong>📢 POST_NOTIFICATIONS</strong><br>
-                    Используется для отображения образовательных уведомлений при разблокировке экрана.</p>
-                    
-                    <p><strong>⚙️ FOREGROUND_SERVICE</strong><br>
-                    Используется для запуска фоновой службы, которая остается активной, даже когда приложение закрыто.</p>
+                <div class="ads-box">
+                    <h4>📌 Типы рекламы:</h4>
+                    <ul>
+                        <li><strong>📱 Баннеры:</strong> Внизу некоторых экранов</li>
+                        <li><strong>🔄 Межстраничная реклама:</strong> При удалении избранных слов или сохраненных текстов</li>
+                    </ul>
                 </div>
                 
                 <h3>📧 Свяжитесь с нами</h3>
@@ -473,12 +540,21 @@
                 
                 <h3>📌 我们收集的信息</h3>
                 <ul>
-                    <li><strong>应用设置：</strong>选择的语言、每日事实限制、通知偏好</li>
-                    <li><strong>学习进度：</strong>保存的收藏单词、显示的事实历史</li>
+                    <li><strong>应用设置：</strong>选择的语言、每日事实限制</li>
+                    <li><strong>学习进度：</strong>保存的收藏单词</li>
                 </ul>
                 
-                <h3>🌐 数据共享</h3>
-                <p>我们<strong>不会与任何第三方共享</strong>您的个人数据。</p>
+                <!-- ==================== 广告部分 ==================== -->
+                <h3>📢 应用中的广告</h3>
+                <p><strong>LinguaGlance</strong> 使用 <strong>Google AdMob</strong> 展示广告。</p>
+                
+                <div class="ads-box">
+                    <h4>📌 广告类型：</h4>
+                    <ul>
+                        <li><strong>📱 横幅广告：</strong>显示在部分屏幕底部</li>
+                        <li><strong>🔄 插页式广告：</strong>删除收藏单词或保存文本时显示</li>
+                    </ul>
+                </div>
                 
                 <h3>📧 联系我们</h3>
                 <div class="developer">
@@ -495,12 +571,21 @@
                 
                 <h3>📌 収集する情報</h3>
                 <ul>
-                    <li><strong>アプリ設定：</strong>選択した言語、1日あたりの事実数、通知設定</li>
-                    <li><strong>学習の進捗：</strong>保存されたお気に入りの単語、表示された事実の履歴</li>
+                    <li><strong>アプリ設定：</strong>選択した言語、1日あたりの事実数</li>
+                    <li><strong>学習の進捗：</strong>保存されたお気に入りの単語</li>
                 </ul>
                 
-                <h3>🌐 データ共有</h3>
-                <p>お客様の個人データを第三者と<strong>共有することはありません</strong>。</p>
+                <!-- ==================== 広告セクション ==================== -->
+                <h3>📢 アプリ内広告</h3>
+                <p><strong>LinguaGlance</strong> は <strong>Google AdMob</strong> を使用して広告を表示します。</p>
+                
+                <div class="ads-box">
+                    <h4>📌 広告の種類：</h4>
+                    <ul>
+                        <li><strong>📱 バナー広告：</strong>一部の画面の下部に表示</li>
+                        <li><strong>🔄 インタースティシャル広告：</strong>お気に入りの単語や保存したテキストを削除するときに表示</li>
+                    </ul>
+                </div>
                 
                 <h3>📧 お問い合わせ</h3>
                 <div class="developer">
